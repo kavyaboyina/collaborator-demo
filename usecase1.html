@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex Item Usecase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">">
+    <style>
+        .parent{
+            display: flex;
+            justify-content: space-between;
+            height: 10vh;
+            align-items: center;
+        }
+        .parent__menu{
+            display: flex;
+            gap: 2rem;
+        }
+        .parent__logo__img{
+            width: 12vw;
+
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: rebeccapurple;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: orange;
+        }
+        #Home{
+           color: aqua;
+        }
+        #About{
+            color: yellow;
+        }
+        #Portfolio{
+            color: brown;
+        }
+        #Login{
+            color: green;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+<body>
+    <!--PARENT SECTION-->
+    <section class="parent">
+        <!--FLEX ITEM-1-->
+        <section class="parent__logo">
+        <img src="logo.jpg" alt="Error" class="parent__logo__img">
+        </section>
+        <!--FLEX ITEM-2-->
+        <section class="parent__menu">
+        <a href="#Home"><i class="fa fa-home"></i>Home</a>
+        <a href="#About"><i class="fa fa-info-circle"></i>About</a>
+        <a href="#Portfolio"><i class="fa fa-briefcase"></i>portfolio</a>
+        <a href="#Login"><i class="fa fa-sign-in"></i>Login</a>
+        </section>
+    </section>
+       <section id="Home">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, nisi.
+       </section>
+       <section id="About">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quos.
+       </section>
+       <section id="portfolio">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       </section>
+       <section id="Login">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, harum?
+       </section>
+</body>
+</html>
